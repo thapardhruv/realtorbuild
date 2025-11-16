@@ -1,0 +1,20 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563EB" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.02"/>
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#blueGradient)"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <!-- Subtle geometric elements -->
+  <circle cx="100" cy="100" r="2" fill="#2563EB" opacity="0.3"/>
+  <circle cx="1100" cy="200" r="1.5" fill="#2563EB" opacity="0.4"/>
+  <circle cx="200" cy="700" r="1" fill="#2563EB" opacity="0.5"/>
+  <circle cx="1000" cy="600" r="2.5" fill="#2563EB" opacity="0.2"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#2563EB" stroke-width="0.5" opacity="0.1"/>
+  <line x1="600" y1="0" x2="600" y2="800" stroke="#2563EB" stroke-width="0.5" opacity="0.1"/>
+</svg>
