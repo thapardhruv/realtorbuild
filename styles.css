@@ -9,27 +9,34 @@
 }
 
 :root {
-    /* Color System */
-    --charcoal-black: #0B0B0F;
-    --pure-white: #FFFFFF;
-    --electric-blue: #2563EB;
-    --electric-blue-dark: #1D4ED8;
-    --light-grey: #F3F4F6;
-    --mid-grey: #6B7280;
-    
+    /* Color System - White/Charcoal/Cobalt Primary */
+    --charcoal: #1f2937;
+    --white: #ffffff;
+    --cobalt: #1e40af;
+    --cobalt-dark: #1d4ed8;
+    --light-grey: #f9fafb;
+    --mid-grey: #6b7280;
+    --border-grey: #e5e7eb;
+    /* Neon Accents */
+    --neon-purple: #8b5cf6;
+    --neon-blue: #3b82f6;
+    --neon-magenta: #ec4899;
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
-    /* Spacing */
+
+    /* Spacing - 48px vertical rhythm */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
-    
-    /* Grid */
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --spacing-xxl: 6rem;
+
+    /* Grid - 12-column, margins 80-120px */
     --container-max: 1200px;
     --grid-gap: 2rem;
+    --margin-side: clamp(5rem, 8vw, 7.5rem); /* 80-120px */
 }
 
 html {
@@ -57,22 +64,31 @@ body {
    =================================== */
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--charcoal-black);
+    color: var(--charcoal);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3.5rem, 7vw, 4rem); /* 56-64px */
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.5rem, 5vw, 3rem); /* 40-48px */
 }
 
 h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 p {
